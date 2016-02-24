@@ -1,15 +1,9 @@
 describe('The global helper', function () {
     it("Should provide a value to the template", function () {
 
-        // Testing
-        var testSettings = {
-            "landingPage": {
-                "header": "Another setting."
-            }
-        };
-        server.call('setMeteorSettings', 'public', testSettings);
-
-        var serverSettings = server.call('getMeteorSettings');
+        var serverSettings = server.execute(function () {
+            return Meteor.settings;
+        });
         console.log('server settings:', serverSettings);
 
         // Setup
