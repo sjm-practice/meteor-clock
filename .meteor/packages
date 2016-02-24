@@ -8,3 +8,4 @@ meteor-base
 blaze-html-templates
 session
 standard-minifiers
+twbs:bootstrap

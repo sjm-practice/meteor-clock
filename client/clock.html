@@ -1,11 +1,8 @@
-<head>
-  <title>SVG Clock Demo</title>
-</head>
+<template name="clock">
 
-<body>
-<h1>{{landingPageHeader}}</h1>
+    <!-- Adapted from David Basoko's SVG clock demo -->
 
-  <svg xmlns="http://www.w3.org/2000/svg"
+    <svg xmlns="http://www.w3.org/2000/svg"
        width="350" height="350"
        viewBox="-110 -110 220 220"
        class="clockSVG">
@@ -25,6 +22,5 @@
         <line {{radial degrees 0.9 1}} class="tickMark"/>
     {{/each}}
   </svg>
-</body>
 
-<!-- Adapted from David Basoko's SVG clock demo -->
+</template>
