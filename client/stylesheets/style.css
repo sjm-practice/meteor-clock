@@ -1,0 +1,29 @@
+.clockSVG {
+    display: block;
+    margin: 0 auto;
+}
+
+.clockFace {
+    stroke: black;
+    fill: #eee;
+}
+
+.hourHand {
+    stroke-width: 6px;
+    stroke: green;
+}
+
+.minuteHand {
+    stroke-width: 4px;
+    stroke: blue;
+}
+
+.secondHand {
+    stroke-width: 2px;
+    stroke: red;
+}
+
+.tickMark {
+    stroke-width: 3px;
+    stroke: black;
+}
