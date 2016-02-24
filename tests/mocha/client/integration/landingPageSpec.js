@@ -1,9 +1,7 @@
 describe('The global helper', function () {
     it("Should provide a value to the template", function () {
 
-        var serverSettings = server.execute(function () {
-            return Meteor.settings;
-        });
+        var serverSettings = server.call('settings');
         console.log('server settings:', serverSettings);
 
         // Setup
