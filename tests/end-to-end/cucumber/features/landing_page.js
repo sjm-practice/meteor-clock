@@ -14,6 +14,6 @@ module.exports = function() {
     this.Then(/^they can see the heading$/, function () {
         client.waitForExist('h1');
         var actualHeading = client.getText('h1');
-        expect(actualHeading).toBe('Analog Clock.');
+        expect(actualHeading).to.equal('Analog Clock.');
     });
 };
